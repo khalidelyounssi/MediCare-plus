@@ -78,53 +78,53 @@ document.addEventListener('DOMContentLoaded', function() {
 
 let table = [ 
     {
-        img: '/images/Scientist Analyzing Specimens.jpg',
+        img: '/images/1.jpg',
         nom : 'Dr. Ahmed Bennani',
         specialite: '⚕️ Cardiologue',
         deponibilite: '✓ Disponible'
     },
     {
-        img: '/images/Scientist Analyzing Specimens.jpg',
+        img: '/images/11.jpg',
         nom : 'Dr. Sara Alami',
         specialite: '💊 Dermatologue',
         deponibilite: '✓ Disponible'
     },
     {
-        img: '/images/Scientist Analyzing Specimens.jpg',
+        img: '/images/2.jpg',
         nom : 'Dr. Karim Idrissi',
         specialite: '👶 Pédiatre',
         deponibilite: '✓ No Disponible'
     },
     {
-        img: '/images/Scientist Analyzing Specimens.jpg',
+        img: '/images/22.jpg',
         nom : 'Dr. Fatima Zahrae',
         specialite: '⚕️ Cardiologue',
         deponibilite: '✓ Disponible'
 
     },
     {
-        img: '/images/Scientist Analyzing Specimens.jpg',
+        img: '/images/3.jpg',
         nom : 'Dr. Youssef Hakim',
         specialite: '💊 Dermatologue',
         deponibilite: '✓ Disponible'
 
     },
     {
-        img: '/images/Scientist Analyzing Specimens.jpg',
+        img: '/images/33.jpg',
         nom : 'Dr. Nadia Benkirane',
         specialite: '👶 Pédiatre',
         deponibilite: '✓ Disponible'
 
     },
     {
-        img: '/images/Scientist Analyzing Specimens.jpg',
+        img: '/images/4.jpg',
         nom : 'Dr. Omar Tazi',
         specialite: '⚕️ Cardiologue',
         deponibilite: '✓ Disponible'
 
     },
     {
-        img: '/images/Scientist Analyzing Specimens.jpg',
+        img: '/images/44.jpg',
         nom : 'Dr. Leila Fassi',
         specialite: '💊 Dermatologue',
         deponibilite: '✓ Disponible'
