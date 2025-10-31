@@ -137,8 +137,8 @@ table.map((value)=>{
     doctors.innerHTML+= 
     `<div class="bg-blue-100 rounded-lg w-60 h-[20em] p-3 flex flex-col gap-5 shadow-lg doctor-card">
         <img src="${value.img} " alt="Dr. Ahmed Bennani" class="rounded-lg h-32 object-cover">
-        <
-         class="font-bold text-xl">${value.nom} </h2>
+        
+         <h2 class="font-bold text-xl">${value.nom} </h2>
         <h3 class="font-semibold text-blue-600">${value.specialite} </h3>
         ${value.deponibilite === '✓ Disponible' ?
             `
@@ -170,15 +170,3 @@ searchInput.addEventListener('keyup', () => {
         }
     });
 });
-
-
-
-
-
-
-
-
-
-
-
-
