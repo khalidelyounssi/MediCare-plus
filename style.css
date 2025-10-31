@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+
+
+#Accueil {
+    
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.mot {
+    display: flex;
+    width: 100rem;
+    height: 10rem;
+
+}
+.doctor-card {
+    transition: all 0.3s ease;
+}
+
+.doctor-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}   
+.favorite-btn {
+    transition: all 0.3s ease;
+    position: relative;
+   
+}
+
+.favorite-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(239, 68, 68, 0.4);
+}
+
+.favorite-btn.active {
+    background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+    color: white;
+    box-shadow: 0 4px 20px rgba(239, 68, 68, 0.6);
+}                                                                                    
+
+
+
+
+body.dark-mode {
+    background-color: #1a202c;
+    color: #e2e8f0;
+}
+
+body.dark-mode header {
+    background-color: #2d3748;
+}
+
+body.dark-mode .doctor-card {
+    background-color: #2d3748 !important;
+    color: #e2e8f0;
+}
+
+    
+
+body.dark-mode #favorites-section {
+    background-color: #2d3748;
+    border-color: #ecc94b;
+}
+

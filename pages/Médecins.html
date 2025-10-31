@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediCareplus</title>
+    <link rel="stylesheet" href="/tailwind.css">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    
+  <header class="fixed bg-blue-50 flex  items-center gap-80 h-20 p-10 w-full z-50">
+    <div class="flex">
+    <h1 class="text-3xl font-bold text-blue-800  " >Medi</h1>
+    <h1 class="text-3xl font-bold  " >Care+</h1>
+    </div>
+    <nav>
+    <ul class=" text-blue-700 font-semibold flex justify-between gap-20 text-1xl ">
+      <li><a href="/index.html">Accueil</a></li>
+      <li><a  href="medecins.html">Médecins</a></li>
+      <li><a href="Rendez-vous.html">Rendez-vous</a></li>
+      <li><a href="suivi.html">Suivi Santé</a></li>
+      </ul>
+    </nav>
+   <label for="check" class="bg-blue-900 cursor-pointer relative w-20 h-10 rounded-full">
+      <input type="checkbox" id="check" class="sr-only peer">
+      <span class="w-2/5 h-4/5 bg-blue-300 absolute rounded-full
+        left-1 top-1 peer-checked:bg-black peer-checked:left-11
+        transition-all duration-500"></span>
+    </label>
+                
+
+  </header>
+   <section id="Médecins" class="flex flex-col justify-center items-center">
+    
+    <h1 class= " mt-32 border-b-4 border-solid border-blue-700 h-10 w-11/12 text-2xl font-bold  ">👨‍⚕️ Page Médecins</h1>
+    
+
+<h2 class="p-7 text-2xl font-bold text-blue-800 ">Spécialité</h2>
+<div class="flex justify-between gap-6 flex-wrap mb-10">
+      <button id="tous" class="bg-blue-700 text-white font-semibold rounded-xl px-6 py-2 mb-4 cursor-pointer hover:bg-blue-800 transition">
+        Tous
+      </button>
+      <button id="cardiologue" class="bg-blue-500 font-semibold rounded-xl px-6 py-2 mb-4 cursor-pointer hover:bg-blue-600 transition">
+        Cardiologue
+      </button>
+      <button id="dermatologue" class="bg-blue-500 font-semibold rounded-xl px-6 py-2 mb-4 cursor-pointer hover:bg-blue-600 transition">
+        Dermatologue
+      </button>
+      <button id="pediatre" class="bg-blue-500 font-semibold rounded-xl px-6 py-2 mb-4 cursor-pointer hover:bg-blue-600 transition">
+        Pédiatre
+      </button>
+      <input
+          id="searchInput"
+          type="search"
+          placeholder="Rechercher un service..."
+          class="bg-blue-400  h-10 w-80 text-white placeholder-white font-semibold rounded-lg py-2 px-4 focus:outline-none focus:ring-2 focus:ring-blue-100 transition"
+        />
+    </div>
+  <div id="med" class="flex gap-10 p-4 flex-wrap justify-center w-full">
+      
+      
+      <div class="bg-blue-100 rounded-lg w-60 h-[20em] p-3 flex flex-col gap-5 shadow-lg doctor-card">
+        <img src="/images/Scientist Analyzing Specimens.jpg" alt="Dr. Ahmed Bennani" class="rounded-lg h-32 object-cover">
+        <h2 class="font-bold text-xl">Dr. Ahmed Bennani</h2>
+        <h3 class="font-semibold text-blue-600">⚕️ Cardiologue</h3>
+        <span class="text-green-600 w-fit rounded-3xl font-semibold px-3 py-1 bg-green-50">✓ Disponible</span>
+        <button data-id="doc-1" class="favorite-btn bg-orange-400 rounded-2xl text-2xl font-bold shadow-lg hover:shadow-xl transition"> ♡ </button>
+      </div>
+
+      
+      <div class="bg-blue-100 rounded-lg w-60 h-[20em] p-3 flex flex-col gap-5 shadow-lg doctor-card">
+        <img src="/images/Scientist Analyzing Specimens.jpg" alt="Dr. Sara Alami" class="rounded-lg h-32 object-cover">
+        <h2 class="font-bold text-xl">Dr. Sara Alami</h2>
+        <h3 class="font-semibold text-blue-600">💊 Dermatologue</h3>
+        <span class="text-green-600 w-fit rounded-3xl font-semibold px-3 py-1 bg-green-50">✓ Disponible</span>
+        <button data-id="doc-2" class="favorite-btn bg-orange-400 rounded-2xl text-2xl font-bold shadow-lg hover:shadow-xl transition"> ♡ </button>
+      </div>
+
+      
+      <div class="bg-blue-100 rounded-lg w-60 h-[20em] p-3 flex flex-col gap-5 shadow-lg doctor-card">
+        <img src="/images/Scientist Analyzing Specimens.jpg" alt="Dr. Karim Idrissi" class="rounded-lg h-32 object-cover">
+        <h2 class="font-bold text-xl">Dr. Karim Idrissi</h2>
+        <h3 class="font-semibold text-blue-600">👶 Pédiatre</h3>
+        <span class="text-red-600 w-fit rounded-3xl font-semibold px-3 py-1 bg-red-50">● Occupé</span>
+        <button data-id="doc-3" class="favorite-btn bg-orange-400 rounded-2xl text-2xl font-bold shadow-lg hover:shadow-xl transition"> ♡ </button>
+      </div>
+
+      
+      <div class="bg-blue-100 rounded-lg w-60 h-[20em] p-3 flex flex-col gap-5 shadow-lg doctor-card">
+        <img src="/images/Scientist Analyzing Specimens.jpg" alt="Dr. Fatima Zahrae" class="rounded-lg h-32 object-cover">
+        <h2 class="font-bold text-xl">Dr. Fatima Zahrae</h2>
+        <h3 class="font-semibold text-blue-600">⚕️ Cardiologue</h3>
+        <span class="text-green-600 w-fit rounded-3xl font-semibold px-3 py-1 bg-green-50">✓ Disponible</span>
+        <button data-id="doc-4" class="favorite-btn bg-orange-400 rounded-2xl text-2xl font-bold shadow-lg hover:shadow-xl transition"> ♡ </button>
+      </div>
+
+      
+      <div class="bg-blue-100 rounded-lg w-60 h-[20em] p-3 flex flex-col gap-5 shadow-lg doctor-card">
+        <img src="/images/Scientist Analyzing Specimens.jpg" alt="Dr. Youssef Hakim" class="rounded-lg h-32 object-cover">
+        <h2 class="font-bold text-xl">Dr. Youssef Hakim</h2>
+        <h3 class="font-semibold text-blue-600">💊 Dermatologue</h3>
+        <span class="text-green-600 w-fit rounded-3xl font-semibold px-3 py-1 bg-green-50">✓ Disponible</span>
+        <button data-id="doc-5" class="favorite-btn bg-orange-400 rounded-2xl text-2xl font-bold shadow-lg hover:shadow-xl transition"> ♡ </button>
+      </div>
+
+      
+      <div class="bg-blue-100 rounded-lg w-60 h-[20em] p-3 flex flex-col gap-5 shadow-lg doctor-card">
+        <img src="/images/Scientist Analyzing Specimens.jpg" alt="Dr. Nadia Benkirane" class="rounded-lg h-32 object-cover">
+        <h2 class="font-bold text-xl">Dr. Nadia Benkirane</h2>
+        <h3 class="font-semibold text-blue-600">👶 Pédiatre</h3>
+        <span class="text-green-600 w-fit rounded-3xl font-semibold px-3 py-1 bg-green-50">✓ Disponible</span>
+        <button data-id="doc-6" class="favorite-btn bg-orange-400 rounded-2xl text-2xl font-bold shadow-lg hover:shadow-xl transition"> ♡ </button>
+      </div>
+
+      
+      <div class="bg-blue-100 rounded-lg w-60 h-[20em] p-3 flex flex-col gap-5 shadow-lg doctor-card">
+        <img src="/images/Scientist Analyzing Specimens.jpg" alt="Dr. Omar Tazi" class="rounded-lg h-32 object-cover">
+        <h2 class="font-bold text-xl">Dr. Omar Tazi</h2>
+        <h3 class="font-semibold text-blue-600">⚕️ Cardiologue</h3>
+        <span class="text-red-600 w-fit rounded-3xl font-semibold px-3 py-1 bg-red-50">● Occupé</span>
+        <button data-id="doc-7" class="favorite-btn bg-orange-400 rounded-2xl text-2xl font-bold shadow-lg hover:shadow-xl transition"> ♡ </button>
+      </div>
+
+      
+      <div class="bg-blue-100 rounded-lg w-60 h-[20em] p-3 flex flex-col gap-5 shadow-lg doctor-card">
+        <img src="/images/Scientist Analyzing Specimens.jpg" alt="Dr. Leila Fassi" class="rounded-lg h-32 object-cover">
+        <h2 class="font-bold text-xl">Dr. Leila Fassi</h2>
+        <h3 class="font-semibold text-blue-600">💊 Dermatologue</h3>
+        <span class="text-green-600 w-fit rounded-3xl font-semibold px-3 py-1 bg-green-50">✓ Disponible</span>
+        <button data-id="doc-8" class="favorite-btn bg-orange-400 rounded-2xl text-2xl font-bold shadow-lg hover:shadow-xl transition"> ♡ </button>
+      </div>
+
+    </div>
+   </section>
+
+  <script src="/js/medecin.js"></script>
+  </body>
+
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediCareplus</title>
+    <link rel="stylesheet" href="tailwind.css">
+</head>
+<body class="bg-blue-900">
+    
+  <header class="fixed bg-blue-50 flex  items-center gap-80 h-20 p-10 w-full z-50">
+    <div class="flex">
+    <h1 class="text-3xl font-bold text-blue-800  " >Medi</h1>
+    <h1 class="text-3xl font-bold  " >Care+</h1>
+    </div>
+    <nav>
+    <ul class=" text-blue-700 font-semibold flex justify-between gap-20 text-1xl ">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a  href="/pages/Médecins.html">Médecins</a></li>
+      <li><a href="/pages/Rendez-vous.html">Rendez-vous</a></li>
+      <li><a href="/pages/Suivi-Santé.html">Suivi Santé</a></li>
+      </ul>
+    </nav>
+   <label for="check" class="bg-blue-900 cursor-pointer relative w-20 h-10 rounded-full">
+      <input type="checkbox" id="check" class="sr-only peer">
+      <span class="w-2/5 h-4/5 bg-blue-300 absolute rounded-full
+        left-1 top-1 peer-checked:bg-black peer-checked:left-11
+        transition-all duration-500"></span>
+    </label>
+              
+
+  </header>
+   <section id="Accueil" class="pt-28 flex flex-col justify-center gap-7   ">
+  <div class="pt-28 flex flex-col justify-center items-center gap-7 mt-40  ">
+    
+  <div class="w-11/12 md:w-5/6 mx-auto mt-96 relative overflow-hidden rounded-2xl bg-white shadow-sm  ">
+    <div id="carouselTrack" class="flex transition-transform duration-500 ease-in-out ">
+      <article class="min-w-full p-10 flex items-center justify-center bg-blue-50">Buvez au moins 1.5 à 2 litres d’eau par jour pour garder votre corps bien hydraté et favoriser la concentration. 💧</article>
+      <article class="min-w-full p-10 flex items-center justify-center bg-blue-200">Essayez de dormir 7 à 9 heures chaque nuit pour renforcer votre système immunitaire et réduire le stress. </article>
+      <article class="min-w-full p-10 flex items-center justify-center bg-blue-400">Faites 30 minutes d’exercice chaque jour : marche, vélo ou étirements pour stimuler votre énergie.</article>
+      <article class="min-w-full p-10 flex items-center justify-center bg-blue-600">Mangez varié : fruits, légumes, protéines et céréales complètes. Évitez les aliments trop sucrés.</article>
+      <article class="min-w-full p-10 flex items-center justify-center bg-blue-700">Lavez-vous les mains régulièrement pendant 20 secondes pour éviter la propagation des virus.</article>
+      <article class="min-w-full p-10 flex items-center justify-center bg-blue-800">Prenez du temps pour vous : respiration, musique, méditation ou lecture aident à mieux gérer la tension.</article>
+    </div>
+
+    <button id="prevBtn" class="absolute left-3 top-1/2 -translate-y-1/2 bg-white text-blue-800 rounded-full px-3 py-1 shadow">‹</button>
+    <button id="nextBtn" class="absolute right-3 top-1/2 -translate-y-1/2 bg-white text-blue-800 rounded-full px-3 py-1 shadow">›</button>
+  </div>
+
+    <div class="flex flex-col gap-4 bg-blue-50 p-5 w-11/12 rounded-2xl">
+
+     <div class="bg-blue-100  rounded-2xl flex flex-co md:flex-row items-center justify-between gap-8 p-10 shadow-md">
+      <div class="flex-1 flex flex-col gap-10">
+        <h1 class="text-3xl font-bold text-blue-900">Bienvenue sur MediCare+</h1>
+        <p class="text-gray-700 leading-relaxed">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat eaque cumque excepturi natus.
+          Molestiae obcaecati sunt perferendis, earum quia magnam eius deserunt doloribus facilis, officiis
+          consequuntur soluta tenetur dolorem debitis.
+        </p>
+        
+      </div>
+
+      <div class="flex-1">
+        <img
+          src="/images/téléchargement (7).jpg"
+          alt="Laboratoire"
+          class="rounded-xl shadow-lg object-cover w-full h-72 md:h-96"
+        />
+      </div>
+      
+    </div>
+    <div class="bg-blue-100 w-full rounded-2xl p-4 h-fit flex  flex-col justify-center items-center gap-8 md:w-auto">
+        <h2 class="font-bold text-2xl text-blue-900">🩺 Articles Médicaux</h2>
+        <input
+        id="searchInput"
+          type="search"
+          placeholder="🔍 Rechercher un service..."
+          class="bg-blue-300 w-4/5 h-15 text-black placeholder-white font-semibold rounded-4xl py-2 px-4 focus:outline-none focus:ring-2 focus:ring-blue-100 transition"
+        /> 
+        
+         
+<div id="articles" class="flex flex-wrap justify-center gap-6 p-6 bg-blue-100 rounded-lg">
+        
+    <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+      <div class="flex items-center gap-4 mb-3">
+        
+        <h3 class="text-lg font-semibold text-blue-900">Consultation Médicale</h3>
+      </div>
+      <p class="text-gray-600 text-sm">Prenez rendez-vous avec un médecin généraliste pour un suivi complet.</p>
+    </div>
+
+   
+    <div class="bg-white p-6 w-[30%] min-w-[250px] rounded-2xl shadow hover:shadow-lg transition">
+      <div class="flex items-center gap-4 mb-3">
+        
+        <h3 class="text-lg font-semibold text-blue-900">Analyse de Sang</h3>
+      </div>
+      <p class="text-gray-600 text-sm">Service rapide et fiable pour vos analyses biologiques.</p>
+    </div>
+
+  
+    <div class="bg-white p-6 w-[30%] min-w-[250px] rounded-2xl shadow hover:shadow-lg transition">
+      <div class="flex items-center gap-4 mb-3">
+        
+        <h3 class="text-lg font-semibold text-blue-900">Radiologie</h3>
+      </div>
+      <p class="text-gray-600 text-sm">Accédez à des examens radiologiques modernes et précis.</p>
+    </div>
+
+    
+    <div class="bg-white p-6 w-[30%] min-w-[250px] rounded-2xl shadow hover:shadow-lg transition">
+      <div class="flex items-center gap-4 mb-3">
+        
+        <h3 class="text-lg font-semibold text-blue-900">Vaccination</h3>
+      </div>
+      <p class="text-gray-600 text-sm">Protégez-vous avec nos campagnes de vaccination saisonnières.</p>
+    </div>
+
+    
+    <div class="bg-white p-6 w-[30%] min-w-[250px] rounded-2xl shadow hover:shadow-lg transition">
+      <div class="flex items-center gap-4 mb-3">
+        
+        <h3 class="text-lg font-semibold text-blue-900">Nutrition et Diététique</h3>
+      </div>
+      <p class="text-gray-600 text-sm">Bénéficiez de conseils personnalisés pour une alimentation équilibrée.</p>
+    </div>
+
+  
+    <div class="bg-white p-6 w-[30%] min-w-[250px] rounded-2xl shadow hover:shadow-lg transition">
+      <div class="flex items-center gap-4 mb-3">
+        
+        <h3 class="text-lg font-semibold text-blue-900">Urgences 24/7</h3>
+      </div>
+      <p class="text-gray-600 text-sm">Nos équipes médicales sont disponibles à tout moment.</p>
+    </div>
+    </div>
+
+  </div>
+        </div>
+        
+    
+    </div>
+   </section>
+    
+
+
+   
+<script src="javascript.js"></script>
+</body>
+</html>
