@@ -1,4 +1,26 @@
- 
+const darkModeToggle = document.getElementById('check');    
+
+if (darkModeToggle) {
+    
+    const isDarkMode = localStorage.getItem('darkMode') === 'true';
+    if (isDarkMode) {
+        document.body.classList.add('dark-mode');
+        darkModeToggle.checked = true;
+    }
+    
+    darkModeToggle.addEventListener('change', function() {
+        document.body.classList.toggle('dark-mode');
+        localStorage.setItem('darkMode', this.checked);
+    });
+} 
+
+
+
+
+
+
+
+
 const nam =document.getElementById('nom');
 const emails =document.getElementById('email');
 const medecins =document.getElementById('medecin');
